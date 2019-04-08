@@ -1,0 +1,12 @@
+reports/
+coverage/
+build/
+node_modules/
+yarn.lock
+stats.json
+*.log
+.DS_Store
+.idea/
+.vscode/
+sass-lint.yml
+.package.json

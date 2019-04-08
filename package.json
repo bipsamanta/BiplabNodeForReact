@@ -1,0 +1,33 @@
+{
+  "name": "biplabnodeforreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "SET NODE_ENV=dev& SET NODE_ENV_TYPE=author & DEBUG=* & PORT=3000 & nodemon server.js",
+    "lint": "npm run lint:js",
+    "lint_project_fix": "npm run lint_fix:js",
+    "lint:eslint": "eslint --ignore-path .gitignore .",
+    "lint_fix:eslint": "eslint --fix --ignore-path .gitignore --ignore-pattern internals/scripts",
+    "lint:js": "npm run lint:eslint",
+    "lint_fix:js": "npm run lint_fix:eslint -- . ",
+    "lint:staged": "lint-staged"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cloud-foundry-config-client": "^1.1.2",
+    "config": "^1.31.0",
+    "content-length": "^1.0.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "i18n": "^0.8.3",
+    "logstash-encoder": "^1.1.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
